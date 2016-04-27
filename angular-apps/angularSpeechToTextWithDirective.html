@@ -27,7 +27,7 @@
                     recordingLength = 0;
                     // if S is pressed, we stop the recording and package the WAV file
 					//promise = $interval(createAudioBufferAndSendIt, 5000);
-					$timeout(createAudioBufferAndSendIt, 5000);
+					$timeout(createAudioBufferAndSendIt, 2000);
                 }
 				scope.rootElem = elem;
 
@@ -252,7 +252,7 @@
                             scope.textMessage = res.results[0].lexical;
 							
 							var rootElemChildren = scope.rootElem.children();
-							if(rootElemChildren == null || rootElemChildren[2] == null || rootElemChildren[2].children == null){
+							if (rootElemChildren == null || rootElemChildren[2] == null || rootElemChildren[2].children == null) {
 								console.log("No children commands detected");
 								return;
 							}
@@ -304,4 +304,6 @@
 
 </body>
 
+</html>
+</html>
 </html>
