@@ -1,0 +1,26 @@
+<html ng-app="speechToText">
+
+<head>
+    <title>HelloWorld</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script>
+        var myapp = angular.module('speechToText', []);		
+    </script>
+	<script src="record-recognize.service.js"></script>
+	<script src="command.directive.js"></script>
+	<script src="speech-recognizer-project-oxford.directive.js"></script>
+</head>
+
+<body>
+
+    <speech-recognizer-project-oxford label="Speak">
+		<command text="turn on" on-recognize="invoke('turnOn')"></command>
+		<command text="turn off" on-recognize="invoke('turnOff')"></command>
+    </speech-recognizer-project-oxford>
+
+</body>
+
+</html>
+</html>
+</html>
